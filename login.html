@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="/login" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+    {% if error %}
+        <p>{{ error }}</p>
+    {% endif %}
+
+    <p>Don't have an account? <a href="/register">Register</a></p>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../static/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Jersey+15+Charted&family=Pacifico&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/80f00f156f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form action="/login" method="post">
+        <h2>Login</h2>
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <p>Don't have an account?</p>
+        <div class="cred">
+            <button type="submit">Login</button>
+            <div class="sign">
+                <button type="click"><a href="/register">Sign up</a></button>
+            </div>
+        </div>
+    </form>
+    
+</body>
+</html>

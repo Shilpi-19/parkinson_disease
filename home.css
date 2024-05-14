@@ -1,0 +1,73 @@
+/* Style for .container */
+body{
+    background-size: cover;
+    background-position: center;
+    background-image: url('./Pdd.png'); 
+}
+.container {
+    width: 50%;
+    background: #cc99cc;
+    padding: 40px;
+    box-shadow: 0 40px 80px rgba(199, 108, 189, 0.1); /* Task 3: Add shadow to div container */
+    border-radius: 8px;
+    text-align: center;
+    margin: 0 auto; /* Center the container horizontally */
+    border: 8px solid #996699;
+    
+}
+/* Style for .first-container */
+.first-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 100px;
+    opacity: 0.5;
+}
+
+/* Style for .welcome */
+.welcome {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0c0101; /* Task 1: Highlight welcome text */
+    margin: 0 auto; /* Task 5: Center the welcome text */
+    background: none;
+    opacity: 0.9;
+}
+
+/* Style for logout button */
+.first-container button {
+    background-color:#032727; /* Task 2: Set logout button color to blue */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.first-container button a{
+    color: #ffffff;
+}
+
+/* Style for .container text */
+.container p {
+    margin-top: 20px;
+    color: #a15050; /* Task 4: Style the text under the div container */
+}
+
+/* Style for file input */
+
+
+#uploadButton {
+    background-color: #660066;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style for 'No file chosen' text */
+#audioUpload + label {
+    margin-left: 10px;
+    color: #666;
+}
